@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="580.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.inventario.inventarioapp.viewcontroller.UsuarioViewController">
+   <children>
+      <SplitPane dividerPositions="0.584228187919463" orientation="VERTICAL" prefHeight="597.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.5499497991967871" prefHeight="346.0" prefWidth="798.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <CheckBox fx:id="chkLeche" layoutX="122.0" layoutY="144.0" mnemonicParsing="false" onAction="#seleccionarLeche" prefHeight="24.0" prefWidth="90.0" text="Leche" />
+                              <CheckBox fx:id="chkAzucar" layoutX="122.0" layoutY="176.0" mnemonicParsing="false" onAction="#seleccionarAzucar" prefHeight="24.0" prefWidth="90.0" text="Azucar" />
+                              <CheckBox fx:id="chkAlmendra" layoutX="231.0" layoutY="144.0" mnemonicParsing="false" onAction="#seleccionarAlmendra" prefHeight="24.0" prefWidth="129.0" text="Leche de Almendra" />
+                              <CheckBox fx:id="chkNatural" layoutX="231.0" layoutY="176.0" mnemonicParsing="false" onAction="#seleccionarNatural" prefHeight="24.0" prefWidth="104.0" text="Azucar Natural" />
+                              <CheckBox fx:id="chkCanela" layoutX="122.0" layoutY="208.0" mnemonicParsing="false" onAction="#seleccionarCanela" prefHeight="24.0" prefWidth="90.0" text="Canela" />
+                              <CheckBox fx:id="chkChantilly" layoutX="231.0" layoutY="208.0" mnemonicParsing="false" onAction="#seleccionarChantilly" prefHeight="24.0" prefWidth="90.0" text="Chantilly" />
+                              <Separator layoutX="60.0" layoutY="135.0" prefHeight="3.0" prefWidth="316.0" />
+                              <Separator layoutX="60.0" layoutY="238.0" prefHeight="3.0" prefWidth="316.0" />
+                              <Label layoutX="114.0" layoutY="73.0" prefHeight="38.0" prefWidth="216.0" text="¿Qué se te antoja?">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="136.0" layoutY="31.0" prefHeight="38.0" prefWidth="82.0" text="Pedido" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="154.0" layoutY="96.0" prefHeight="31.0" prefWidth="47.0" text="Precio" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="136.0" layoutY="172.0" prefHeight="31.0" prefWidth="82.0" text="Ingredientes" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="19.0" layoutY="79.0" prefHeight="3.0" prefWidth="316.0" />
+                              <Separator layoutX="20.0" layoutY="263.0" prefHeight="3.0" prefWidth="316.0" />
+                              <Button fx:id="btnComprar" layoutX="260.0" layoutY="288.0" mnemonicParsing="false" onAction="#comprar" text="Comprar" />
+                              <Label fx:id="txtPrecio" layoutX="64.0" layoutY="135.0" prefHeight="24.0" prefWidth="225.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="txtIngredientes" layoutX="64.0" layoutY="211.0" prefHeight="24.0" prefWidth="225.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="788.0">
+               <children>
+                  <Label layoutX="313.0" layoutY="23.0" prefHeight="38.0" prefWidth="172.0" text="Disponibilidad">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="171.0" layoutY="79.0" prefHeight="20.0" prefWidth="47.0" text="Leche:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="171.0" layoutY="112.0" prefHeight="20.0" prefWidth="130.0" text="Leche de Almendra:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="442.0" layoutY="79.0" prefHeight="20.0" prefWidth="47.0" text="Azucar:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="442.0" layoutY="111.0" prefHeight="20.0" prefWidth="130.0" text="Azucar Natural:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="171.0" layoutY="146.0" prefHeight="20.0" prefWidth="130.0" text="Canela:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="442.0" layoutY="145.0" prefHeight="20.0" prefWidth="130.0" text="Chantilly:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtLecheDisponible" layoutX="323.0" layoutY="77.0" prefHeight="24.0" prefWidth="47.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtAlmendraDisponible" layoutX="323.0" layoutY="110.0" prefHeight="24.0" prefWidth="47.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtCanelaDisponible" layoutX="323.0" layoutY="144.0" prefHeight="24.0" prefWidth="47.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtAzucarDisponible" layoutX="580.0" layoutY="77.0" prefHeight="24.0" prefWidth="47.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtNaturalDisponible" layoutX="580.0" layoutY="108.0" prefHeight="24.0" prefWidth="47.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtChantillyDisponible" layoutX="580.0" layoutY="143.0" prefHeight="24.0" prefWidth="47.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

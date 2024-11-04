@@ -4,14 +4,17 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import co.edu.uniquindio.inventario.inventarioapp.controller.InventarioController;
+import co.edu.uniquindio.inventario.inventarioapp.factory.ModelFactory;
 import co.edu.uniquindio.inventario.inventarioapp.model.Inventario;
+import co.edu.uniquindio.inventario.inventarioapp.services.IObservador;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class InventarioViewController {
+public class InventarioViewController implements IObservador {
     InventarioController inventarioController;
     Inventario inventario;
 
@@ -114,7 +117,9 @@ public class InventarioViewController {
     @FXML
     void initialize() {
         inventarioController = new InventarioController();
-        inventario = new Inventario();
+        inventario = ModelFactory.getInstance().getInventario();
+        inventario.agregarObservador(this);
+        actualizar();
         initView();
     }
 
@@ -131,4 +136,16 @@ public class InventarioViewController {
         txtNatural.setText(String.valueOf(inventarioController.getCantidadNatural()));
     }
 
+    @Override
+    public void actualizar() {
+        initDataBindingInventario();
+    }
+
+    private void mostrarMensaje(String titulo, String header, String contenido, Alert.AlertType alertType){
+        Alert alert = new Alert(alertType);
+        alert.setTitle(titulo);
+        alert.setHeaderText(header);
+        alert.setContentText(contenido);
+        alert.showAndWait();
+    }
 }

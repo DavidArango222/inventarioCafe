@@ -1,6 +1,13 @@
 package co.edu.uniquindio.inventario.inventarioapp.model;
 
-public class Inventario {
+import co.edu.uniquindio.inventario.inventarioapp.services.IObservable;
+import co.edu.uniquindio.inventario.inventarioapp.services.IObservador;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Inventario implements IObservable {
+    private List<IObservador> observadorList = new ArrayList<>();
     protected int cantidadLeche;
     protected int cantidadAlmendra;
     protected int cantidadAzucar;
@@ -20,6 +27,7 @@ public class Inventario {
         this.cantidadNatural = cantidadNatural;
         this.cantidadAlmendra = cantidadAlmendra;
         this.cantidadChantilly = cantidadChantilly;
+
     }
 
     public Inventario() {}
@@ -30,6 +38,7 @@ public class Inventario {
 
     public void setCantidadLeche(int cantidadLeche) {
         this.cantidadLeche = cantidadLeche;
+        notificarObservadores();
     }
 
     public int getCantidadAlmendra() {
@@ -38,6 +47,7 @@ public class Inventario {
 
     public void setCantidadAlmendra(int cantidadAlmendra) {
         this.cantidadAlmendra = cantidadAlmendra;
+        notificarObservadores();
     }
 
     public int getCantidadAzucar() {
@@ -46,6 +56,7 @@ public class Inventario {
 
     public void setCantidadAzucar(int cantidadAzucar) {
         this.cantidadAzucar = cantidadAzucar;
+        notificarObservadores();
     }
 
     public int getCantidadNatural() {
@@ -54,6 +65,7 @@ public class Inventario {
 
     public void setCantidadNatural(int cantidadNatural) {
         this.cantidadNatural = cantidadNatural;
+        notificarObservadores();
     }
 
     public int getCantidadChantilly() {
@@ -62,6 +74,7 @@ public class Inventario {
 
     public void setCantidadChantilly(int cantidadChantilly) {
         this.cantidadChantilly = cantidadChantilly;
+        notificarObservadores();
     }
 
     public int getCantidadCanela() {
@@ -70,5 +83,23 @@ public class Inventario {
 
     public void setCantidadCanela(int cantidadCanela) {
         this.cantidadCanela = cantidadCanela;
+        notificarObservadores();
+    }
+
+    @Override
+    public void agregarObservador(IObservador observador) {
+        observadorList.add(observador);
+    }
+
+    @Override
+    public void eliminarObservador(IObservador observador) {
+        observadorList.remove(observador);
+    }
+
+    @Override
+    public void notificarObservadores() {
+        for (IObservador observador : observadorList) {
+            observador.actualizar();
+        }
     }
 }

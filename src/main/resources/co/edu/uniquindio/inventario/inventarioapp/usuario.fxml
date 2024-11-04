@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="580.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.inventario.inventarioapp.viewcontroller.UsuarioViewController">
    <children>
       <SplitPane dividerPositions="0.584228187919463" orientation="VERTICAL" prefHeight="597.0" prefWidth="800.0">
@@ -54,12 +53,12 @@
                               <Separator layoutX="19.0" layoutY="79.0" prefHeight="3.0" prefWidth="316.0" />
                               <Separator layoutX="20.0" layoutY="263.0" prefHeight="3.0" prefWidth="316.0" />
                               <Button fx:id="btnComprar" layoutX="260.0" layoutY="288.0" mnemonicParsing="false" onAction="#comprar" text="Comprar" />
-                              <Label fx:id="txtPrecio" layoutX="64.0" layoutY="135.0" prefHeight="24.0" prefWidth="225.0">
+                              <Label fx:id="txtPrecio" alignment="CENTER" layoutX="64.0" layoutY="135.0" prefHeight="24.0" prefWidth="225.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="txtIngredientes" layoutX="64.0" layoutY="211.0" prefHeight="24.0" prefWidth="225.0">
+                              <Label fx:id="txtIngredientes" alignment="CENTER" layoutX="23.0" layoutY="211.0" prefHeight="24.0" prefWidth="316.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>

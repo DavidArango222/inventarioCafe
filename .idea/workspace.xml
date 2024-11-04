@@ -4,31 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a87bab38-65cc-4a68-95d2-fcbcd129ada7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/controller/InventarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/factory/ModelFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/Inventario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/services/IInventarioServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/utils/DataUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/InventarioViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/UsuarioViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/inventario/inventarioapp/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/inventario/inventarioapp/inventario.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/inventario/inventarioapp/usuario.fxml" afterDir="false" />
+    <list default="true" id="a87bab38-65cc-4a68-95d2-fcbcd129ada7" name="Changes" comment="Creación y funcionamiento de inventario con patrones implementados">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/controller/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/Cafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeAzucar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeAzucarNatural.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeCanela.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeChantilly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeDecorador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeLeche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeLecheAlmendra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/services/ICafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/services/IObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/services/IObservador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/factory/ModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/factory/ModelFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/Inventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/Inventario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/InventarioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/InventarioViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/UsuarioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/UsuarioViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/inventario/inventarioapp/usuario.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/inventario/inventarioapp/usuario.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DavidArango222&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DavidArango222/inventarioCafe.git&quot;,
+    &quot;accountId&quot;: &quot;ca282dc5-54d2-4e30-b208-707eb3a6b882&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -120,11 +126,43 @@
       <workItem from="1730674208276" duration="228000" />
       <workItem from="1730674467182" duration="1193000" />
       <workItem from="1730675680124" duration="52000" />
-      <workItem from="1730675742685" duration="1148000" />
+      <workItem from="1730675742685" duration="2164000" />
+      <workItem from="1730680554830" duration="5000" />
+      <workItem from="1730680591336" duration="650000" />
+      <workItem from="1730681255849" duration="30000" />
+      <workItem from="1730681459935" duration="109000" />
+      <workItem from="1730681583852" duration="33000" />
+      <workItem from="1730681626425" duration="34000" />
+      <workItem from="1730681670869" duration="11000" />
+      <workItem from="1730681688535" duration="13000" />
+      <workItem from="1730681707067" duration="955000" />
+      <workItem from="1730682677706" duration="410000" />
+      <workItem from="1730683094534" duration="3000" />
+      <workItem from="1730683159094" duration="1378000" />
+      <workItem from="1730684560410" duration="3584000" />
+      <workItem from="1730688160221" duration="1000" />
+      <workItem from="1730688199814" duration="15000" />
+      <workItem from="1730688241051" duration="62000" />
+      <workItem from="1730688313050" duration="33000" />
+      <workItem from="1730688365306" duration="9000" />
+      <workItem from="1730688382118" duration="362000" />
     </task>
+    <task id="LOCAL-00001" summary="Creación y funcionamiento de inventario con patrones implementados">
+      <option name="closed" value="true" />
+      <created>1730679887558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730679887558</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creación y funcionamiento de inventario con patrones implementados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creación y funcionamiento de inventario con patrones implementados" />
   </component>
 </project>

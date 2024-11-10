@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a87bab38-65cc-4a68-95d2-fcbcd129ada7" name="Changes" comment="Creación y funcionamiento de inventario con patrones implementados">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/controller/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/Cafe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeAzucar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeAzucarNatural.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeCanela.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeChantilly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeDecorador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeLeche.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/CafeLecheAlmendra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/services/ICafe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/services/IObservable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/services/IObservador.java" afterDir="false" />
+    <list default="true" id="a87bab38-65cc-4a68-95d2-fcbcd129ada7" name="Changes" comment="implementación del patron observador y ajustes visuales">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/factory/ModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/factory/ModelFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/Inventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/model/Inventario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/InventarioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/InventarioViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/UsuarioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/viewcontroller/UsuarioViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/inventario/inventarioapp/usuario.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/inventario/inventarioapp/usuario.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/inventario/inventarioapp/services/IInventarioServices.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,21 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jhona/OneDrive/Escritorio/3° Semestre/co.edu.uniquindio(marketplace dinamico)",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="co.edu.uniquindio.inventario.inventarioapp" />
@@ -145,7 +131,12 @@
       <workItem from="1730688241051" duration="62000" />
       <workItem from="1730688313050" duration="33000" />
       <workItem from="1730688365306" duration="9000" />
-      <workItem from="1730688382118" duration="362000" />
+      <workItem from="1730688382118" duration="431000" />
+      <workItem from="1730736162728" duration="154000" />
+      <workItem from="1730849036469" duration="2367000" />
+      <workItem from="1730855421547" duration="1332000" />
+      <workItem from="1730856926334" duration="1573000" />
+      <workItem from="1731021406309" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Creación y funcionamiento de inventario con patrones implementados">
       <option name="closed" value="true" />
@@ -155,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730679887558</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implementación del patron observador y ajustes visuales">
+      <option name="closed" value="true" />
+      <created>1730688800960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730688800960</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creación y funcionamiento de inventario con patrones implementados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creación y funcionamiento de inventario con patrones implementados" />
+    <MESSAGE value="implementación del patron observador y ajustes visuales" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementación del patron observador y ajustes visuales" />
   </component>
 </project>

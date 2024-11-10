@@ -1,11 +1,9 @@
 package co.edu.uniquindio.inventario.inventarioapp.factory;
 
-import co.edu.uniquindio.inventario.inventarioapp.model.Cafe;
 import co.edu.uniquindio.inventario.inventarioapp.model.Inventario;
-import co.edu.uniquindio.inventario.inventarioapp.services.ICafe;
 import co.edu.uniquindio.inventario.inventarioapp.utils.DataUtil;
 
-public class ModelFactory {
+public class ModelFactory{
     public static ModelFactory  modelFactory;
     private Inventario inventario;
 
